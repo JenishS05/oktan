@@ -279,6 +279,11 @@ nav.menu {
 
 /* Responsive Design for Small Screens */
 @media (max-width: 480px) {
+
+    span.phone-number-slider {
+        display: none;
+    }
+
     .navbar {
         flex-wrap: wrap;
         text-align: center;

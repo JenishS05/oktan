@@ -3402,20 +3402,21 @@
                     </div>
                 </div>
 
-                <!-- Center Section (Form) -->
-                <div class="form-footer col-lg-4">
 
+                <!-- Center Section (Form) -->
+
+                <div class="form-footer col-lg-4">
                     <div class="contact-form">
                         <h2 class="text-center mb-4" style="padding-bottom: 85px;">Write Us</h2>
                         <form>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Full name">
+                                <input type="text" class="form-control animated-placeholder" placeholder="Full name">
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Phone Number">
+                                <input type="text" class="form-control animated-placeholder" placeholder="Phone Number">
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Your Message"
+                                <textarea class="form-control animated-placeholder" rows="4" placeholder="Your Message"
                                     style="height: 300px;"></textarea>
                             </div>
                             <div class="form-bitton">
@@ -3426,8 +3427,55 @@
                             &copy; Copyright 2024 All Rights Reserved
                         </div>
                     </div>
-
                 </div>
+
+                <style>
+                    textarea.form-control.animated-placeholder {
+                        overflow-x: hidden;
+                    }
+
+                    /* Styling for placeholder animation */
+                    .animated-placeholder::placeholder {
+                        position: relative;
+                        text-align: center;
+                        /* Align placeholder text to center */
+                        transition: transform 0.5s ease, opacity 0.5s ease;
+                        /* Smooth transition */
+                    }
+
+                    .animated-placeholder:focus::placeholder {
+                        transform: translateX(100%);
+                        /* Move placeholder to the right */
+                        opacity: 0;
+                        /* Fade-out placeholder */
+                    }
+
+                    /* Optional Input and Button Styling */
+                    .form-control {
+                        width: 100%;
+                        padding: 12px;
+                        font-size: 16px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        text-align: center;
+                        /* Aligns input text and placeholder initially to the center */
+                    }
+
+                    .btn-send {
+                        background-color: #007bff;
+                        color: #fff;
+                        padding: 12px;
+                        font-size: 16px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+
+                    .btn-send:hover {
+                        background-color: #0056b3;
+                    }
+                </style>
 
                 <!-- Right Section -->
                 <div class="col-lg-4 col-md-6 footer">
