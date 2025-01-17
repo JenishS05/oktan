@@ -93,6 +93,11 @@ header {
 }
 
 /* Logo */
+
+nav.menu {
+    padding-top: 22px;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -474,6 +479,19 @@ a.phone-hidden-lg:hover {
 
 
 
+.slider-emailbox>.searcher {
+    display: flex;
+    border: 1px solid white;
+}
+
+.writing-pen>i.fa-solid.fa-pen {
+    color: red;
+    padding: 10px;
+}
+
+
+
+
 /* navbar end */
 
 /* arrow strat */
@@ -496,7 +514,9 @@ a.phone-hidden-lg:hover {
 
 button#btn-back-to-top {
     border-radius: 50%;
+    z-index: 1000;
 }
+
 
 
 
@@ -1166,7 +1186,7 @@ span.elementor-divider-separator {
     color: var(--white);
 
     transition: opacity 0.9s ease, bottom 0.3s ease;
-    visibility: hidden;
+    visibility: hidden; 
 }
 
 .item.position-relative:hover .our-team-wp {
@@ -1199,9 +1219,32 @@ a.social-icon.p-2.bg-light.rounded-circle {
         background-color: var(--faq-infomation);
         height: 1028px;
     }
+
+    .card-title {
+        font-weight: 800;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .card-body-section-part.ps-4.pe-4 {
+        justify-content: flex-start;
+    }
+
+    .our-team-wp {
+        padding: 17px;
+        font-size: 26px;
+        width: max-content;
+        left: 150px;
+
+    }
 }
 
-@media (min-width: 800px) and (max-width: 885px) {
+@media (min-width: 768px) and (max-width: 885px) {
+
+    .card-body-section-part {
+        width: 344px;
+    }
+
     .item.position-relative>.card {
         width: 21rem !important;
     }
@@ -1217,6 +1260,10 @@ a.social-icon.p-2.bg-light.rounded-circle {
         font-size: 22px;
         display: flex;
         gap: 10px;
+        width: max-content;
+        left: 180px;
+
+
     }
 }
 

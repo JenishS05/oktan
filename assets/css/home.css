@@ -101,6 +101,11 @@ a {
 }
 
 /* Menu */
+
+nav.menu {
+  padding-top: 20px;
+}
+
 .menu {
   display: flex;
 }
@@ -3553,60 +3558,60 @@ p.slider-text-childe {
   }
 }
 
-  @media (min-width:950px) and (max-width:992px) {
+@media (min-width:900px) and (max-width:992px) {
 
-    .col-xl-6.col-lg-6.col-sm-12.d-flex.justify-content-center.align-items-center>img {
-      padding-top: 10px;
-
-    }
-
-    .card-boxing {
-      background-color: var(--faq-infomation);
-      height: 100%;
-    }
-
-    .oktal-contect {
-      width: 700px;
-    }
-
-    p.oktal-c {
-      width: 685px;
-    }
-
-    .map-discription.col-6.col-sm-4.col-md-4.col-lg-4.mb-4 {
-      width: 100% !important;
-    }
-
-    div#map\ col-6\ col-sm-4\ col-md-4\ col-lg-4\ mb-4\  {
-      width: 100% !important;
-      padding-bottom: 26px;
-
-    }
-
-    .oktal-sider-img .item {
-      order: 2 !important;
-    }
-
-    a.video-trigger>img {
-      width: 945px !important;
-    }
-
-    p.slider-text-childe {
-      margin-left: 0px;
-    }
-
-    p.mt-2.text-muted {
-      text-align: center;
-    }
-
-    .form-footer.col-lg-4 {
-      order: 3;
-    }
-
-    ul.list-unstyled.contact-info {
-      height: 560px !important;
-    }
+  .col-xl-6.col-lg-6.col-sm-12.d-flex.justify-content-center.align-items-center>img {
+    padding-top: 10px;
 
   }
 
-  /* extra end */
+  .card-boxing {
+    background-color: var(--faq-infomation);
+    height: 100%;
+  }
+
+  .oktal-contect {
+    width: 700px;
+  }
+
+  p.oktal-c {
+    width: 685px;
+  }
+
+  .map-discription.col-6.col-sm-4.col-md-4.col-lg-4.mb-4 {
+    width: 100% !important;
+  }
+
+  div#map\ col-6\ col-sm-4\ col-md-4\ col-lg-4\ mb-4\  {
+    width: 100% !important;
+    padding-bottom: 26px;
+
+  }
+
+  .oktal-sider-img .item {
+    order: 2 !important;
+  }
+
+  a.video-trigger>img {
+    width: 945px !important;
+  }
+
+  p.slider-text-childe {
+    margin-left: 0px;
+  }
+
+  p.mt-2.text-muted {
+    text-align: center;
+  }
+
+  .form-footer.col-lg-4 {
+    order: 3;
+  }
+
+  ul.list-unstyled.contact-info {
+    height: 560px !important;
+  }
+
+}
+
+/* extra end */
