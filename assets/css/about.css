@@ -14,7 +14,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
@@ -68,13 +68,17 @@ a {
 
 
 
-
 header {
     background-image: url(../image/title_bg.jpg);
     height: 400px;
     position: relative;
     text-align: center;
     background-attachment: fixed;
+    background-size: cover;
+}
+
+a.offcanvas-link {
+    text-decoration: none !important;
 }
 
 .navbar {
@@ -227,6 +231,157 @@ nav.menu {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+/*  */
+
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+@media(max-width:900px) {
+    .menu-toggle {
+        visibility: visible;
+    }
+}
+
+.menu-toggle span {
+    background-color: white !important;
+    height: 2px;
+    width: 30px;
+    margin: 4px 0;
+}
+
+.menu-toggle p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-menu .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.contact-menu .hamburger-menu span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+    .navbar {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .logo {
+        order: 1;
+        width: 33.33%;
+    }
+
+    .menu-toggle {
+        order: 2;
+        margin: 10px auto;
+        width: 33.33%;
+    }
+
+    .contact-menu {
+        width: 33.33%;
+        text-align: center;
+        display: flex !important;
+        justify-content: end !important;
+        padding-right: 10px;
+    }
+
+    .logo span {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        padding-right: 31px !important;
+    }
+
+    .menu-toggle {
+        order: 2;
+        margin: 10px auto;
+    }
+
+    .logo img {
+        height: 41px;
+        width: 37px;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .contact-menu {
+        order: 3;
+    }
+}
+
+/* hamgiri meni */
+.offcanvas-body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.offcanvas-menu li>a:hover {
+    color: var(--our-team-hr);
+}
+
+.offcanvas-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offcanvas-menu li {
+    margin: 10px 0;
+}
+
+.offcanvas-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    color: #ffffff;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.offcanvas-body {
+    flex-grow: 1;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    overflow-y: hidden !important;
+}
+
+
+
+/* hamgiri meni */
+
+/*  */
+
 /* Responsive Styles */
 @media (min-width: 300px) and (max-width:330px) {
     .contact-menu>span.phone-number-slider {
@@ -322,15 +477,7 @@ nav.menu {
     margin-top: 30px;
 }
 
-.slider-emailbox>.searcher>input#inputPassword {
-    border: none;
-    width: 100%;
-    background-color: var(--sapred-world);
-}
 
-.searcher>input#slider {
-    background-color: var(--sapred-world);
-}
 
 .slider-panel-icon a {
     display: inline-block;
@@ -480,15 +627,36 @@ a.phone-hidden-lg:hover {
 
 
 .slider-emailbox>.searcher {
+
     display: flex;
-    border: 1px solid white;
+    border: 2px solid var(--dark-white);
+    padding: 5px;
+
 }
 
-.writing-pen>i.fa-solid.fa-pen {
+.writing-pen>a>i.fa-solid.fa-pen {
     color: red;
     padding: 10px;
 }
 
+.slider-emailbox>.searcher>input#inputPassword {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    width: 100%;
+    background-color: var(--sapred-world);
+    color: white !important;
+}
+
+.slider-emailbox>.searcher>input#inputPassword:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.searcher>input#slider {
+    background-color: var(--sapred-world);
+}
 
 
 
@@ -894,7 +1062,7 @@ iframe {
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     top: 10px;
-    left: 5px;
+    left: 2px;
 }
 
 @keyframes pulse-border {
@@ -1184,10 +1352,12 @@ span.elementor-divider-separator {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white);
+    width: max-content;
 
     transition: opacity 0.9s ease, bottom 0.3s ease;
-    visibility: hidden; 
+    visibility: hidden;
 }
+
 
 .item.position-relative:hover .our-team-wp {
     bottom: 80px;
@@ -1503,7 +1673,7 @@ button.btn.btn-send.w-100 {
     /* height: 100%; */
 }
 
-@media (min-width: 100px) and (max-width: 450px) {
+@media (min-width: 100px) and (max-width: 768px) {
     .map-discription.col-6.col-sm-4.col-md-4.col-lg-4.mb-4 {
         width: 100% !important;
     }
@@ -1640,3 +1810,98 @@ button.btn.btn-send.w-100 {
 
 
 /* footer end */
+
+
+/* extra responsive start */
+
+.item.position-relative>.card {
+    width: 22.5rem;
+}
+
+.item.position-relative>img {
+    height: 528px !important;
+}
+
+@media (min-width: 420px) and (max-width: 767px) {
+
+
+    .item.position-relative>.card {
+        width: 466px !important;
+    }
+
+    .card-body-section-part {
+        padding: 15px;
+    }
+
+    p.card-text {
+        font-size: 14px;
+    }
+
+    .button-boxed>button.btn.btn-light {
+        width: 262px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+
+
+
+    nav.menu {
+        display: none;
+    }
+
+}
+
+@media (min-width: 885px) and (max-width: 992px) {
+
+    .card-body.text-light>p.about-card-txt-tag {
+        width: fit-content;
+        font-size: large;
+        text-align: start;
+    }
+
+    h5.card-title {
+        font-size: 14px;
+    }
+
+    p.card-text {
+        font-size: 14px;
+    }
+
+    .item.position-relative>.card {
+        width: 340px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1120px) {
+
+
+
+
+    .item.position-relative>.card {
+        width: 28rem !important;
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 2800px) {
+
+
+    .item.position-relative>.card {
+        width: 26.5rem;
+    }
+
+    .contact-section>.container>.row.g-4>.col-lg-4 {
+        height: 100%;
+    }
+
+    .card-body.text-light>p.about-card-txt-tag {
+        width: 265px;
+        font-size: large;
+        text-align: start;
+    }
+
+}
+
+
+/* extra responsive end */

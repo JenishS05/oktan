@@ -93,7 +93,7 @@
                         <a href="#" class="hover-underline">PAGES<span class="ps-1"><i
                                     class="fa-solid fa-greater-than"></i></span></a>
                         <ul>
-                            <li><a href="#">About</a></li>
+                            <li><a href="about.html">About</a></li>
                             <div class="divider " style="border-bottom: 1px solid #e7e8e9;"></div>
                             <li><a href="#">Carrers</a></li>
                             <div class="divider " style="border-bottom: 1px solid #e7e8e9;"></div>
@@ -155,9 +155,12 @@
                     <li><a href="#" class="hover-underline">CONTACT</a></li>
                 </ul>
             </nav>
-            <!-- <button id="nav_toggle" class="nav-btn" aria-controls="nav_top" aria-expanded="false" aria-label="Top Menu Toggler">
-                <span>menu</span>
-            </button> -->
+            <div class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRights"
+                aria-controls="offcanvasRight">
+                <span></span>
+                <p>MENU</p>
+                <span></span>
+            </div>
             <div class="contact-menu">
                 <span class="phone-number-slider">800 123 4567</span>
                 <div class="hamburger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -169,13 +172,49 @@
             </div>
         </div>
     </header>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offcanvas Example</title>
-    <!-- Bootstrap CSS (CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Offcanvas -->
+
+    <!-- middle Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRights" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header" style="background-color: #d68841;">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel" style="color: white;">Menu</h5>
+            <button type="button" class="btn-close text-reset" style="background-color: #d64541;"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-menu">
+                <li><a href="#" class="offcanvas-link">Home</a></li>
+                <li>
+                    <a class="offcanvas-link dropdown-toggle" data-bs-toggle="collapse" href="#pagesDropdown"
+                        role="button" aria-expanded="false" aria-controls="pagesDropdown">
+                        Pages
+                    </a>
+                    <ul class="collapse" id="pagesDropdown">
+                        <li><a href="#" class="dropdown-item">About Us</a></li>
+                        <li><a href="#" class="dropdown-item">Our Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="offcanvas-link">Gallery</a></li>
+                <li><a href="#" class="offcanvas-link">Services</a></li>
+                <li>
+                    <a class="offcanvas-link dropdown-toggle" data-bs-toggle="collapse" href="#shopDropdown"
+                        role="button" aria-expanded="false" aria-controls="shopDropdown">
+                        Shop
+                    </a>
+                    <ul class="collapse" id="shopDropdown">
+                        <li><a href="#" class="dropdown-item">Products</a></li>
+                        <li><a href="#" class="dropdown-item">Cart</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="offcanvas-link">Blog</a></li>
+                <li><a href="#" class="offcanvas-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!--  middel ofcancas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
 
@@ -253,7 +292,7 @@
                     <div class="animation">
                         <div class="bubble">
                             <div class="bubble-child">
-                                <h4 class="bubble-text">01.  Providing for Today</h4>
+                                <h4 class="bubble-text">01. Providing for Today</h4>
                                 <p class="bubble-contact">Vital Oil & </p>
                                 <p class="bubble-contact">Natural Gas</p>
                                 <div class="oil-btn d-flex align-items-center ">

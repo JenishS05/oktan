@@ -114,23 +114,66 @@
                         <li><a href="#" class="hover-underline">CONTACT</a></li>
                     </ul>
                 </nav>
-                <div class="contact-menu">
-                    <span class="phone-number-slider">800 123 4567</span>
-                    <div class="hamburger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                        aria-controls="offcanvasRight">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <div class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRights"
+                aria-controls="offcanvasRight">
+                <span></span>
+                <p>MENU</p>
+                <span></span>
+            </div>
+            <div class="contact-menu">
+                <span class="phone-number-slider">800 123 4567</span>
+                <div class="hamburger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
     </header>
 
 
-    <!-- Bootstrap CSS (CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- middle Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRights" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header" style="background-color: #d68841;">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel" style="color: white;">Menu</h5>
+            <button type="button" class="btn-close text-reset" style="background-color: #d64541;"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-menu">
+                <li><a href="#" class="offcanvas-link">Home</a></li>
+                <li>
+                    <a class="offcanvas-link dropdown-toggle" data-bs-toggle="collapse" href="#pagesDropdown"
+                        role="button" aria-expanded="false" aria-controls="pagesDropdown">
+                        Pages
+                    </a>
+                    <ul class="collapse" id="pagesDropdown">
+                        <li><a href="#" class="dropdown-item">About Us</a></li>
+                        <li><a href="#" class="dropdown-item">Our Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="offcanvas-link">Gallery</a></li>
+                <li><a href="#" class="offcanvas-link">Services</a></li>
+                <li>
+                    <a class="offcanvas-link dropdown-toggle" data-bs-toggle="collapse" href="#shopDropdown"
+                        role="button" aria-expanded="false" aria-controls="shopDropdown">
+                        Shop
+                    </a>
+                    <ul class="collapse" id="shopDropdown">
+                        <li><a href="#" class="dropdown-item">Products</a></li>
+                        <li><a href="#" class="dropdown-item">Cart</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="offcanvas-link">Blog</a></li>
+                <li><a href="#" class="offcanvas-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
+
+
+    <!--  middel ofcancas -->
     <!-- Offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -187,6 +230,7 @@
 
 
     <!-- arrow end -->
+
     <!-- diana t. davis -->
     <div class="diana-image " style="padding-top: 100px; padding-bottom: 100px">
         <div class="container">
@@ -425,7 +469,7 @@
             <div class="owl-carousel owl-theme">
                 <div class="item position-relative">
                     <img src="assets/image/slider-1.png" alt="Barn Owl">
-                    <div class="card" style="width: 23rem;">
+                    <div class="card">
                         <div class="card-body-section-part">
                             <h5 class="card-title">Anita J. Harker </h5>
                             <p class="card-text">CEO</p>
@@ -446,7 +490,7 @@
                 </div>
                 <div class="item position-relative">
                     <img src="assets/image/slider-2.png" alt="Barn Owl">
-                    <div class="card" style="width: 24rem;">
+                    <div class="card">
                         <div class="card-body-section">
                             <h5 class="card-title">Harold K. Cave</h5>
                             <p class="card-text">Coordinator</p>
@@ -465,7 +509,7 @@
                 </div>
                 <div class="item position-relative">
                     <img src="assets/image/slider-3.png" alt="Barn Owl">
-                    <div class="card" style="width: 26rem;">
+                    <div class="card">
                         <div class="card-body-section-part ps-4 pe-4">
                             <h5 class="card-title ">
                                 Alex M. Richardson </h5>
@@ -485,7 +529,7 @@
                 </div>
                 <div class="item position-relative">
                     <img src="assets/image/slider-4.png" alt="Barn Owl">
-                    <div class="card" style="width: 24rem;">
+                    <div class="card" >
                         <div class="card-body-section">
                             <h5 class="card-title">Tajana N.Emmett</h5>
                             <p class="card-text">Accountant</p>
@@ -504,7 +548,7 @@
                 </div>
                 <div class="item position-relative">
                     <img src="assets/image/slider-5.png" alt="Barn Owl">
-                    <div class="card" style="width: 24rem;">
+                    <div class="card">
                         <div class="card-body-section-part">
                             <h5 class="card-title">Justine E. Lnger</h5>
                             <p class="card-text">Manager</p>
@@ -524,7 +568,7 @@
                 </div>
                 <div class="item position-relative">
                     <img src="assets/image/oktan-male.png" alt="Barn Owl">
-                    <div class="card" style="width: 26rem;">
+                    <div class="card" >
                         <div class="card-body-section">
                             <h5 class="card-title">Rogar J. Watkins </h5>
                             <p class="card-text">President</p>
@@ -554,13 +598,13 @@
                 $('.owl-carousel').owlCarousel({
                     loop: true,
                     margin: 10,
-                    autoplay: true,
+                    autoplay:false,
                     nav: true,
                     responsive: {
                         0: {
                             items: 1
                         },
-                        480: {
+                        768: {
                             items: 2
                         },
                         1020: {
