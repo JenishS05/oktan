@@ -62,8 +62,11 @@ a {
     --about-achive-text: #cccccc;
     --bussness-lunch-color: #053448;
     --card-back-color: #366678;
+<<<<<<< HEAD
     --growing-campony-color: #5697b1;
 
+=======
+>>>>>>> cd1ff7c ( two page completed)
 }
 
 
@@ -466,7 +469,11 @@ a.phone-hidden-lg:hover {
 }
 
 .power-plant-line {
+<<<<<<< HEAD
     border: 1.5px solid var(--liner2);
+=======
+    border: 1.5px solid red;
+>>>>>>> cd1ff7c ( two page completed)
     width: 52px;
 
 }
@@ -482,7 +489,11 @@ a.phone-hidden-lg:hover {
 }
 
 .writing-pen>a>i.fa-solid.fa-pen {
+<<<<<<< HEAD
     color:var(--liner2);
+=======
+    color: red;
+>>>>>>> cd1ff7c ( two page completed)
     padding: 10px;
 }
 
@@ -530,7 +541,10 @@ ul.offcanvas-menu>li>a:hover {
     color: var(--liner2);
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> cd1ff7c ( two page completed)
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -540,14 +554,22 @@ ul.offcanvas-menu>li>a:hover {
 }
 
 .menu-toggle span {
+<<<<<<< HEAD
     background-color:var(--white);
+=======
+    background-color: #fff;
+>>>>>>> cd1ff7c ( two page completed)
     height: 2px;
     width: 30px;
     margin: 4px 0;
 }
 
 .menu-toggle p {
+<<<<<<< HEAD
     color:var(--white);
+=======
+    color: white;
+>>>>>>> cd1ff7c ( two page completed)
     font-size: 14px;
     font-weight: bold;
     margin: 4px 0;
@@ -708,6 +730,7 @@ button#btn-back-to-top {
 
 }
 
+<<<<<<< HEAD
 /* all for good end*/
 
 /* growing strat */
@@ -833,3 +856,6 @@ div#accordionExample>.accordion-item {
 
 
 /*  Vacancies end */
+=======
+/* all for good end*/
+>>>>>>> cd1ff7c ( two page completed)
