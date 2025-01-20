@@ -632,6 +632,7 @@ a.phone-hidden-lg:hover {
 
 
 .slider-emailbox>.searcher {
+<<<<<<< HEAD
 
     display: flex;
     border: 2px solid var(--dark-white);
@@ -640,10 +641,18 @@ a.phone-hidden-lg:hover {
 }
 
 .writing-pen>a>i.fa-solid.fa-pen {
+=======
+    display: flex;
+    border: 1px solid white;
+}
+
+.writing-pen>i.fa-solid.fa-pen {
+>>>>>>> d37a503 (seound page complated)
     color: red;
     padding: 10px;
 }
 
+<<<<<<< HEAD
 .slider-emailbox>.searcher>input#inputPassword {
     border: none !important;
     box-shadow: none !important;
@@ -662,6 +671,8 @@ a.phone-hidden-lg:hover {
 .searcher>input#slider {
     background-color: var(--sapred-world);
 }
+=======
+>>>>>>> d37a503 (seound page complated)
 
 
 
@@ -1360,7 +1371,7 @@ span.elementor-divider-separator {
     width: max-content;
 
     transition: opacity 0.9s ease, bottom 0.3s ease;
-    visibility: hidden;
+    visibility: hidden; 
 }
 
 
