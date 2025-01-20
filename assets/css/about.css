@@ -279,14 +279,11 @@ nav.menu {
 
 /* Responsive Design for Small Screens */
 @media (max-width: 480px) {
-<<<<<<< HEAD
 
     span.phone-number-slider {
         display: none;
     }
 
-=======
->>>>>>> cd1ff7c ( two page completed)
     .navbar {
         flex-wrap: wrap;
         text-align: center;
@@ -635,40 +632,25 @@ a.phone-hidden-lg:hover {
 
 
 .slider-emailbox>.searcher {
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    display: flex;
+x    display: flex;
     border: 2px solid var(--dark-white);
     padding: 5px;
 
 }
 
 .writing-pen>a>i.fa-solid.fa-pen {
-=======
-=======
-
->>>>>>> cd1ff7c ( two page completed)
     display: flex;
     border: 2px solid var(--dark-white);
     padding: 5px;
 
 }
 
-<<<<<<< HEAD
 .writing-pen>i.fa-solid.fa-pen {
->>>>>>> d37a503 (seound page complated)
-=======
 .writing-pen>a>i.fa-solid.fa-pen {
->>>>>>> cd1ff7c ( two page completed)
     color: red;
     padding: 10px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> cd1ff7c ( two page completed)
 .slider-emailbox>.searcher>input#inputPassword {
     border: none !important;
     box-shadow: none !important;
@@ -687,11 +669,7 @@ a.phone-hidden-lg:hover {
 .searcher>input#slider {
     background-color: var(--sapred-world);
 }
-<<<<<<< HEAD
-=======
->>>>>>> d37a503 (seound page complated)
-=======
->>>>>>> cd1ff7c ( two page completed)
+
 
 
 
