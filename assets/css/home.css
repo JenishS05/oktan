@@ -235,7 +235,7 @@ nav.menu {
 
 @media(max-width:900px) {
   .menu-toggle {
-    visibility:visible;
+    visibility: visible;
   }
 }
 
@@ -273,40 +273,46 @@ nav.menu {
     flex-wrap: wrap;
     text-align: center;
   }
+
   .logo {
     order: 1;
     width: 33.33%;
-}
-.menu-toggle {
-  order: 2;
-  margin: 10px auto;
-  width: 33.33%;
-}
-.contact-menu {
-  width: 33.33%;
-  text-align: center;
-  display: flex !important;
-  justify-content: end !important;
-  padding-right: 10px;
-}
+  }
+
+  .menu-toggle {
+    order: 2;
+    margin: 10px auto;
+    width: 33.33%;
+  }
+
+  .contact-menu {
+    width: 33.33%;
+    text-align: center;
+    display: flex !important;
+    justify-content: end !important;
+    padding-right: 10px;
+  }
+
   .logo span {
     font-size: 18px;
     font-weight: bold;
     text-align: left;
     padding-right: 31px !important;
-}
+  }
 
   .menu-toggle {
     order: 2;
     margin: 10px auto;
   }
+
   .logo img {
     height: 41px;
     width: 37px;
-}
-.logo p{
-  display: none;
-}
+  }
+
+  .logo p {
+    display: none;
+  }
 
   .logo {
     order: 1;
@@ -316,39 +322,42 @@ nav.menu {
     order: 3;
   }
 }
+
 /* hamgiri meni */
 .offcanvas-body {
-    padding: 20px;
-    font-family: Arial, sans-serif;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
-.offcanvas-menu li>a:hover{
-color: var(--our-team-hr);
+
+.offcanvas-menu li>a:hover {
+  color: var(--our-team-hr);
 }
+
 .offcanvas-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .offcanvas-menu li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .offcanvas-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
 .dropdown-item {
-    color: #ffffff;
-    padding-left: 20px;
-    font-size: 16px;
+  color: #ffffff;
+  padding-left: 20px;
+  font-size: 16px;
 }
 
 .offcanvas-body {
@@ -429,7 +438,7 @@ color: var(--our-team-hr);
 }
 
 .offcanvas.offcanvas-end {
-  background-color:#043849;
+  background-color: #043849;
 }
 
 .offcanvas-body {
@@ -549,25 +558,25 @@ span.phone-number-slider:hover {
 
 }
 
-  @media (min-width: 300px) and (max-width:350px) {
+@media (min-width: 300px) and (max-width:350px) {
 
 
-    span.phone-number-slider {
-      display: none;
-    }
-
-    .contact-menu {
-      display: block;
-      align-items: center;
-      gap: 20px;
-    }
+  span.phone-number-slider {
+    display: none;
   }
 
+  .contact-menu {
+    display: block;
+    align-items: center;
+    gap: 20px;
+  }
+}
 
 
 
 
-  /* navbar end */
+
+/* navbar end */
 
 /* arrow strat */
 
@@ -3735,15 +3744,10 @@ p.slider-text-childe {
   }
 
   a.video-trigger>img {
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 872px !important;
-=======
     width: 945px !important;
->>>>>>> d37a503 (seound page complated)
-=======
     width: 872px !important;
->>>>>>> cd1ff7c ( two page completed)
+
   }
 
   p.slider-text-childe {

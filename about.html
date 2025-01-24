@@ -27,15 +27,18 @@
         <div class="e-con-inner-photo">
             <div class="e-conner-boxed">
                 <span class=" conner-boxed">About</span>
-
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="home.html">HOME PAGE</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">ABOUT</li>
+                    </ol>
+                </nav>
             </div>
-            <div class="button-boxed">
-                <button type="button" class="btn btn-light">Home Page / Go To Blog</button>
 
-
-            </div>
 
         </div>
+
+
         <div class="navbar">
             <div class="container-fluid">
                 <div class="logo">
@@ -115,21 +118,21 @@
                     </ul>
                 </nav>
                 <div class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRights"
-                aria-controls="offcanvasRight">
-                <span></span>
-                <p>MENU</p>
-                <span></span>
-            </div>
-            <div class="contact-menu">
-                <span class="phone-number-slider">800 123 4567</span>
-                <div class="hamburger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight">
                     <span></span>
-                    <span></span>
+                    <p>MENU</p>
                     <span></span>
                 </div>
+                <div class="contact-menu">
+                    <span class="phone-number-slider">800 123 4567</span>
+                    <div class="hamburger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
-        </div>
     </header>
 
 
@@ -525,7 +528,7 @@
                 </div>
                 <div class="item position-relative">
                     <img src="assets/image/slider-4.png" alt="Barn Owl">
-                    <div class="card" >
+                    <div class="card">
                         <div class="card-body-section">
                             <h5 class="card-title">Tajana N.Emmett</h5>
                             <p class="card-text">Accountant</p>
@@ -564,7 +567,7 @@
                 </div>
                 <div class="item position-relative">
                     <img src="assets/image/oktan-male.png" alt="Barn Owl">
-                    <div class="card" >
+                    <div class="card">
                         <div class="card-body-section">
                             <h5 class="card-title">Rogar J. Watkins </h5>
                             <p class="card-text">President</p>
@@ -594,7 +597,7 @@
                 $('.owl-carousel').owlCarousel({
                     loop: true,
                     margin: 10,
-                    autoplay:false,
+                    autoplay: false,
                     nav: true,
                     responsive: {
                         0: {

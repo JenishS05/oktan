@@ -14,7 +14,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
@@ -62,11 +62,8 @@ a {
     --about-achive-text: #cccccc;
     --bussness-lunch-color: #053448;
     --card-back-color: #366678;
-<<<<<<< HEAD
     --growing-campony-color: #5697b1;
 
-=======
->>>>>>> cd1ff7c ( two page completed)
 }
 
 
@@ -81,6 +78,33 @@ header {
     background-attachment: fixed;
     background-size: cover;
 }
+
+ol.breadcrumb {
+    justify-content: center;
+}
+
+ol.breadcrumb {
+    background-color: var(--white);
+    font-size: medium;
+    background-color: var(--white);
+    font-size: medium;
+    width: 288px;
+    border-radius: 27px;
+    padding: 15px;
+}
+
+li.breadcrumb-item>a {
+    color: var(--btn-color);
+    font-weight: 400;
+
+}
+
+li.breadcrumb-item>a:hover {
+    color: var(--liner2);
+    font-weight: 400;
+
+}
+
 
 .navbar {
     width: 100%;
@@ -469,11 +493,8 @@ a.phone-hidden-lg:hover {
 }
 
 .power-plant-line {
-<<<<<<< HEAD
     border: 1.5px solid var(--liner2);
-=======
     border: 1.5px solid red;
->>>>>>> cd1ff7c ( two page completed)
     width: 52px;
 
 }
@@ -489,11 +510,8 @@ a.phone-hidden-lg:hover {
 }
 
 .writing-pen>a>i.fa-solid.fa-pen {
-<<<<<<< HEAD
-    color:var(--liner2);
-=======
+    color: var(--liner2);
     color: red;
->>>>>>> cd1ff7c ( two page completed)
     padding: 10px;
 }
 
@@ -541,10 +559,7 @@ ul.offcanvas-menu>li>a:hover {
     color: var(--liner2);
 
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> cd1ff7c ( two page completed)
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -554,22 +569,16 @@ ul.offcanvas-menu>li>a:hover {
 }
 
 .menu-toggle span {
-<<<<<<< HEAD
-    background-color:var(--white);
-=======
+    background-color: var(--white);
     background-color: #fff;
->>>>>>> cd1ff7c ( two page completed)
     height: 2px;
     width: 30px;
     margin: 4px 0;
 }
 
 .menu-toggle p {
-<<<<<<< HEAD
-    color:var(--white);
-=======
+    color: var(--white);
     color: white;
->>>>>>> cd1ff7c ( two page completed)
     font-size: 14px;
     font-weight: bold;
     margin: 4px 0;
@@ -730,7 +739,7 @@ button#btn-back-to-top {
 
 }
 
-<<<<<<< HEAD
+
 /* all for good end*/
 
 /* growing strat */
@@ -826,7 +835,7 @@ p.vacancies-child {
     border: 1px solid var(--liner2);
     width: 50px;
     display: flex;
-    align-items:center !important;
+    align-items: center !important;
     justify-content: center;
     margin: auto;
 }
@@ -838,14 +847,105 @@ div#accordionExample>.accordion-item {
 .accordion-item>h2#headingOne {
     border: 1px solid var(--dark-white);
 }
-.accordion-item>h2#headingTwo,h2#headingTwo {
-    border: 1px solid var(--dark-white);
+
+.accordion-item>h2#headingTwo,
+h2#headingTwo {
+    border: 1px solid var(white);
 }
+
 .accordion-item>h2#headingOne {
     border: 1px solid var(--dark-white);
 }
+
 .accordion-item>h2#headingOne {
+    border: 1px solid var(--white);
+}
+
+.carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12>p.ceo-duties-parent {
+    color: var(--dark-white);
+    font-size: large;
+}
+
+.carrers-ceo-page-parent.d-flex {
+    gap: 28px;
+}
+
+.oktal-icon-element.align-content-center.mt-5>.oktan-editor.d-flex {
+    margin-top: -11px;
+
+}
+
+.oktan-editor.d-flex>p.text-editor-part {
+    color: var(--btn-color);
+    font-weight: 600;
+
+}
+
+.carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12>h5.carrers-duties-parts.mt-5 {
+    color: var(--btn-color);
+    font-weight: 700;
+
+}
+
+.accordion-body {
+    border: none;
+    width: 100%;
+    padding: 15px;
+}
+
+.carrers-ceo-page-parent.d-flex {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+}
+
+.carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12 {
+    width: 100%;
+}
+
+.carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12>img {
+    width: 100% !important;
+}
+
+.accordion-item {
+    padding-top: 23px;
+}
+
+button.accordion-button.collapsed {
+    padding: 25px;
+}
+
+button.accordion-button.collapsed:hover {
+    background-color: transparent;
     border: 1px solid var(--dark-white);
+}
+
+@media(min-width:100px) and (max-width:890px) {
+
+    .carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12 {
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .oktal-icon-element.align-content-center.mt-5 {
+        display: inline-block;
+    }
+}
+
+@media(min-width:1000px) and (max-width:4000px) {
+    .carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12 {
+        width: 52%;
+    }
+
+    .carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12 {
+        width: 48%;
+    }
+
+    .carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12>h5.carrers-duties-parts.mt-5 {
+        margin-top: 2rem !important;
+    }
 }
 
 
@@ -856,6 +956,50 @@ div#accordionExample>.accordion-item {
 
 
 /*  Vacancies end */
-=======
+
+/* filter grid */
+/* Button styling */
+ul#myTab {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item-btn>a {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: var(--btn-color);
+    font-weight: 700;
+    border: 1px solid transparent;
+    border: 1px solid var(--btn-color);
+}
+
+.nav-item-btn>a:hover {
+    background-color: var(--btn-color);
+    color: var(--white);
+
+}
+
+.nav-item-btn>a.active {
+    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--link-icon);
+}
+
+
+
+/* Image display styling */
+#image-container img {
+    width: 200px;
+    height: auto;
+    display: none;
+}
+
+#image-container img.active {
+    display: block;
+}
+
+/* filter grid over */
+
 /* all for good end*/
->>>>>>> cd1ff7c ( two page completed)
