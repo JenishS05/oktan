@@ -782,6 +782,90 @@ h1.text-carrer {
 
 
 /*  Vacancies start */
+.active-button>ul>li.nav-item-btn {
+  padding-right: 10px;
+}
+
+.active-button>ul>li>button#Australia-tab {
+  border: 2px solid var(--bussness-lunch-color);
+  border-radius: 23px;
+  background-color: var(--bussness-lunch-color);
+  color: var(--white);
+  padding: 6px;
+  width: 107px;
+  font-weight: 700;
+}
+
+.active-button>ul>li>button#Australia-tab:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.active-button>ul>li>button#USA-tab {
+  border: 2px solid var(--btn-color);
+  border-radius: 23px;
+  background-color: transparent;
+  color: var(--black);
+  padding: 6px;
+  width: 80px;
+  font-weight: 700;
+}
+
+.active-button>ul>li>button#USA-tab:hover {
+  background-color: var(--bussness-lunch-color);
+  color: var(--white);
+}
+
+.active-button>ul>li>button#UK-tab {
+  border: 2px solid var(--btn-color);
+  border-radius: 23px;
+  background-color: transparent;
+  color: var(--black);
+  padding: 6px;
+  width: 80px;
+  font-weight: 700;
+}
+
+.active-button>ul>li>button#UK-tab:hover {
+  background-color: var(--bussness-lunch-color);
+  color: var(--white);
+}
+
+.active-button>ul>li>button#China-tab {
+  border: 2px solid var(--btn-color);
+  border-radius: 23px;
+  background-color: transparent;
+  color: var(--black);
+  padding: 6px;
+  width: 90px;
+  font-weight: 700;
+}
+
+.active-button>ul>li>button#China-tab:hover {
+  background-color: var(--bussness-lunch-color);
+  color: var(--white);
+}
+
+.active-button>ul>li>button#India-tab {
+  border: 2px solid var(--btn-color);
+  border-radius: 23px;
+  background-color: transparent;
+  color: var(--black);
+  padding: 6px;
+  width: 80px;
+  font-weight: 700;
+}
+
+.active-button>ul>li>button#India-tab:hover {
+  background-color: var(--bussness-lunch-color);
+  color: var(--white);
+}
+
+
+.active-button {
+  display: flex;
+  justify-content: center;
+}
 
 .Vacancies-parent {
   padding-top: 135px;
@@ -813,6 +897,7 @@ p.vacancies-child {
   justify-content: center;
   margin: auto;
 }
+
 @media (max-width: 480px) {
   p.vacancies-child {
     width: auto;
@@ -864,54 +949,73 @@ ol.breadcrumb {
   border-radius: 32px;
   justify-content: center;
 }
+
 .carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12>img {
   width: 100%;
 }
 
-.carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12 >p.ceo-duties-parent {
+.carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12>p.ceo-duties-parent {
   color: var(--dark-white);
 }
+
 .carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12>h5.carrers-duties-parts.mt-5 {
-  color:var(--btn-color);
-  font-weight: 600
-}
-.oktan-editor.d-flex>p.text-editor-part {
-  color: var(--bussness-lunch-color);
+  color: var(--btn-color);
+  font-weight: 700
 }
 
-@media (max-width:300px){
-  ol.breadcrumb{
+.oktan-editor.d-flex>p.text-editor-part {
+  color: var(--bussness-lunch-color);
+  font-weight: 600;
+}
+
+@media (max-width:300px) {
+  ol.breadcrumb {
     width: auto;
   }
 }
-@media (min-width:1100px) and (max-width:1119px){
- 
-  h5.carrers-duties-parts.mt-5,.oktal-icon-element.align-content-center.mt-5 {
-    margin-top: 20px!important;
+
+@media (min-width:1100px) and (max-width:1119px) {
+
+  h5.carrers-duties-parts.mt-5,
+  .oktal-icon-element.align-content-center.mt-5 {
+    margin-top: 20px !important;
+  }
+
+  .carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12 {
+
+    padding-left: 30px !important;
+  }
 }
-.carrers-ceo-page-child2.col-lg-6.col-md-12.col-sm-12{
- 
-  padding-left: 30px !important;
-}
-}
+
 @media (min-width:768px) and (max-width: 884px) {
-  .carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12>img{
+  .carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12>img {
     width: 100%;
   }
 }
+
 @media (max-width:480px) {
-  
-.accordion-body,
-.carrers-ceo-page-parent.d-flex.mt-4,
-.carrers-ceo-page-parent.d-flex.mt-3,
-.carrers-ceo-page-parent.d-flex.mt-3>.row,
-.carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12,
-.carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12>img {
-  width: 100%;
+
+  .accordion-body,
+  .carrers-ceo-page-parent.d-flex.mt-4,
+  .carrers-ceo-page-parent.d-flex.mt-3,
+  .carrers-ceo-page-parent.d-flex.mt-3>.row,
+  .carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12,
+  .carrers-ceo-page-child1.col-lg-6.col-md-12.col-sm-12>img {
+    width: 100%;
+  }
+
+  p.ceo-duties-parent {
+    padding-top: 20px;
+  }
 }
-p.ceo-duties-parent{
-  padding-top: 20px;
-}
+
+@media (min-width:1px) and (max-width:510px) {
+
+
+  ul#myTab {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 }
 
 
@@ -920,5 +1024,53 @@ p.ceo-duties-parent{
 
 
 /*  Vacancies end */
+
+/* We Spread start*/
+
+.sapred-oktan {
+  color: var(--sapred-world);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 80%;
+}
+
+.stat-item {
+  flex: 1;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #2c3e50;
+  margin: 5px 0;
+}
+
+.stat-desc {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.around-word {
+  color: var(--sapred-color);
+}
+
+.sapred-text-one,
+.sapred-text-two {
+  font-size: 46px;
+  color: var(--sapred-world);
+}
+
+/* we-sapred-end */
 
 /* all for good end*/
