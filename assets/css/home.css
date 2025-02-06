@@ -3137,6 +3137,14 @@ a.social-icon.bg-light.rounded-circle {
     padding-top: 0px !important;
   }
 }
+@media (min-width: 250px) and (max-width: 750px){
+.stat-desc{
+font-size: 12px;
+}
+.stat-label{
+  font-size: 12px;
+}
+}
 
 @media (min-width: 750px) and (max-width: 950px) {
   .map-discription.col-6.col-sm-4.col-md-4.col-lg-4.mb-4 {
@@ -3765,6 +3773,49 @@ p.slider-text-childe {
   ul.list-unstyled.contact-info {
     height: 560px !important;
   }
+
+}
+
+
+
+
+@media (min-width: 10px) and (max-width: 393px) {
+  .col-4 {
+    flex: 0 0 auto;
+    /* width: 33.33333333%; */
+  }
+
+  .button-boxed>button.btn.btn-light {
+    position: absolute;
+    border-radius: 34px;
+    padding: 15px;
+    color: var(--dys-color);
+    width: 59%;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item.oktal-chemical.col-xl-6.col-lg-6.col-sm-12.d-flex.flex-column.justify-content-center {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 450px) and (max-width: 750px) {
+
+
+  .contact-form {
+    padding: 20px;
+    background-color: var(--white);
+    position: relative;
+    bottom: 1px !important;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 90.333333% !important;
+}
 
 }
 

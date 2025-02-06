@@ -80,9 +80,11 @@ header {
     background-attachment: fixed;
     background-size: cover;
 }
+
 ol.breadcrumb {
     justify-content: center;
 }
+
 ol.breadcrumb {
     background-color: var(--white);
     font-size: medium;
@@ -92,12 +94,14 @@ ol.breadcrumb {
     border-radius: 27px;
     padding: 15px;
 }
+
 li.breadcrumb-item>a {
     color: var(--btn-color);
     font-weight: 400;
 
 }
-li.breadcrumb-item>a:hover{
+
+li.breadcrumb-item>a:hover {
     color: var(--liner2);
     font-weight: 400;
 
@@ -105,10 +109,11 @@ li.breadcrumb-item>a:hover{
 
 
 .button-boxed>.btn.btn-light>a {
-	color:var(--btn-color);
+    color: var(--btn-color);
 }
-.button-boxed>.btn.btn-light>a:hover{
-	color:var(--liner2);
+
+.button-boxed>.btn.btn-light>a:hover {
+    color: var(--liner2);
 }
 
 a.offcanvas-link {
@@ -188,6 +193,19 @@ nav.menu {
     left: 0;
     z-index: 999;
     width: 211px;
+}
+
+@media (min-width: 10px) and (max-width:393px) {
+
+    ol.breadcrumb {
+        background-color: var(--white);
+        font-size: medium;
+        background-color: var(--white);
+        font-size: medium;
+        width: 194px;
+        border-radius: 27px;
+        padding: 11px;
+    }
 }
 
 @media (min-width: 900px) and (max-width:2000px) {
@@ -722,8 +740,8 @@ button#btn-back-to-top {
 
 .button-boxed>button.btn.btn-light:hover {
     background-color: var(--white);
-   
-    
+
+
 }
 
 
@@ -1618,6 +1636,30 @@ button.btn.btn-send.w-100 {
     width: 165px !important;
     border-radius: 54px;
     padding: 15px;
+}
+
+@media (min-width: 10px) and (max-width: 393px) {
+    .divider.my-2 {
+        margin-left: 65px;
+        width: 175px;
+    }
+
+    .about-archive-button>button.btn.btn-secondary {
+        border-radius: 35px;
+        width: 61% !important;
+        padding: 17px;
+        background-image: linear-gradient(180deg, var(--orange) 0%, var(--liner2));
+    }
+
+    .item.position-relative>.card {
+        width: 16.5rem !important;
+    }
+
+    p.lorem {
+        width: 250px;
+        text-align: start;
+        color: var(--white);
+    }
 }
 
 
